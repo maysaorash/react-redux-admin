@@ -61,6 +61,7 @@ const _nav =  [
       _tag: 'CSidebarNavItem',
       name: 'Add Movie',
       to: '/movie/add-movie',
+      icon: 'cil-user-plus',
     },
     {
       _tag: 'CSidebarNavItem',
@@ -78,11 +79,13 @@ const _nav =  [
       _tag: 'CSidebarNavItem',
       name: 'Add Show',
       to: '/show/add-show',
+      icon: 'cil-user-plus',
     },
     {
       _tag: 'CSidebarNavItem',
       name: 'Show List',
       to: '/show/show-list',
+      icon: '',
     },
   ]
   },

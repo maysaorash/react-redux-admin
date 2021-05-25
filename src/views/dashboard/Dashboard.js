@@ -5,7 +5,7 @@ import {
   CCardGroup,
   CCard,
   CCardBody,
-  CCardFooter,
+  // CCardFooter,
   CCardHeader,
   CDropdown,
   CDropdownToggle,
@@ -21,7 +21,7 @@ import {
   CChartBar,
 } from '@coreui/react-chartjs';
 
-import { DocsLink } from 'src/reusable';
+// import { DocsLink } from 'src/reusable';
 import CIcon from '@coreui/icons-react'
 
 // import MainChartExample from '../charts/MainChartExample.js'
