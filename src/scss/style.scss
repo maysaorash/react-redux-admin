@@ -1,0 +1,17 @@
+// If you want to override variables do it here
+@import "variables";
+// $primary: red;
+$body-bg:  black;
+$body-color: #D1D0CF;
+// Import CoreUI styles
+@import "~@coreui/coreui/scss/coreui.scss";
+// Some temp fixes
+@import "fixes";
+// If you want to add something do it here
+@import "custom";
+.card, .card-header, .c-sidebar-nav{
+    background-color: #141414;
+}
+input{
+    background-color: #141414;
+}
