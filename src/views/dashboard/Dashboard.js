@@ -34,11 +34,7 @@ const Dashboard = () => {
     <>
       <WidgetsDropdown />
       <WidgetsBrand withCharts/>
-      {/* <CCard>
-        <CCardBody>
-          
-          <MainChartExample style={{height: '300px', marginTop: '40px'}}/>
-        </CCardBody> */}
+  
 
 <CCardGroup columns className = "cols-1"  >
       <CCard>
