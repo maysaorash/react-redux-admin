@@ -20,7 +20,6 @@ import {
 import {
   CChartBar,
 } from '@coreui/react-chartjs';
-
 import { DocsLink } from 'src/reusable';
 import CIcon from '@coreui/icons-react'
 
@@ -33,7 +32,7 @@ const Dashboard = () => {
   return (
     <>
       <WidgetsDropdown />
-      <WidgetsBrand withCharts/>
+     <WidgetsBrand withCharts/>
   
 
 <CCardGroup columns className = "cols-1"  >
