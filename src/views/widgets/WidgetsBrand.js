@@ -10,7 +10,7 @@ const WidgetsBrand = ({withCharts})=>{
 
   return withCharts ?
   <CRow>
-    <CCol sm="6" lg="2">
+    <CCol sm="6" lg="3">
       <CWidgetBrand className="card" style={{width: '14rem'}}>
      <div className="row">
   <div className="col-md-4">
@@ -27,7 +27,7 @@ const WidgetsBrand = ({withCharts})=>{
      </div>
       </CWidgetBrand>
     </CCol>
-    <CCol sm="6" lg="2">
+    <CCol sm="6" lg="3">
     <CWidgetBrand className="card" style={{width: '14rem'}}>
      <div className="row">
   <div className="col-md-4">
@@ -44,7 +44,7 @@ const WidgetsBrand = ({withCharts})=>{
      </div>
       </CWidgetBrand>
       </CCol>
-      <CCol sm="6" lg="2">
+      <CCol sm="6" lg="3">
       <CWidgetBrand className="card" style={{width: '14rem'}}>
      <div className="row">
   <div className="col-md-4">

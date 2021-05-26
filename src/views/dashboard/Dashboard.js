@@ -3,6 +3,7 @@ import {
   CBadge,
   CButton,
   CCardGroup,
+  // CChartDoughnut,
   CCard,
   CCardBody,
   // CCardFooter,
@@ -19,7 +20,16 @@ import {
 
 import {
   CChartBar,
-} from '@coreui/react-chartjs';
+  CChartLine,
+  CChartDoughnut,
+  CChartRadar,
+  CChartPie,
+  CChartPolarArea
+} from '@coreui/react-chartjs'
+
+// import {
+//   CChartBar,
+// } from '@coreui/react-chartjs';
 
 
 // import { DocsLink } from 'src/reusable';
@@ -34,8 +44,104 @@ const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
 const Dashboard = () => {
   return (
     <>
+<<<<<<< HEAD
+    <CRow>
+      <CCol lg='8'>
+          <WidgetsDropdown />
+          <WidgetsBrand withCharts/>
+      </CCol>
+
+      <CCol lg='4'>
+       <CCard>
+        <CCardHeader>
+          User's Of Product
+        </CCardHeader>
+        <CCardBody>
+          <CChartDoughnut
+         
+            datasets={[
+              {
+                backgroundColor: [
+                  '#41B883',
+                  '#E46651',
+                  '#00D8FF',
+                  '#DD1B16'
+                ],
+                data: [40, 20, 80, 10]
+              }
+            ]}
+           
+            // labels={['New Customer', 'Exsisting Subsriber', 'Daily Visitor', 'Extented Subsriber']}
+            // // labels= {['New Customer']}
+            // options={{
+            //   tooltips: {
+            //     enabled: true
+            //   }}}
+              
+          />
+          <CRow className='text-center'>
+            <CCol md sm='6' className='mb-sm-2 mb-0'>
+              <div className='text-muted'>This Month</div>
+              <CProgress
+                className='progress-xs mt-2'
+                precision={1}
+                color='danger'
+                value={40}
+              />
+              
+              </CCol>
+              <CCol md sm='6' className='mb-sm-2 mb-0'>
+              <div className='text-muted'>This Month</div>
+              <CProgress
+                className='progress-xs mt-2'
+                precision={1}
+                color='danger'
+                value={40}
+              />
+              
+              </CCol><CCol md sm='6' className='mb-sm-2 mb-0'>
+              <div className='text-muted'>This Month</div>
+              <CProgress
+                className='progress-xs mt-2'
+                precision={1}
+                color='danger'
+                value={40}
+              />
+              
+              </CCol><CCol md sm='6' className='mb-sm-2 mb-0'>
+              <div className='text-muted'>This Month</div>
+              <CProgress
+                className='progress-xs mt-2'
+                precision={1}
+                color='danger'
+                value={40}
+              />
+              
+              </CCol>
+              </CRow>
+        </CCardBody>
+        </CCard>
+        {/* <CCardFooter>
+          <CRow className='text-center'>
+            <CCol md sm='12' className='mb-sm-2 mb-0'>
+              <div className='text-muted'>This Month</div>
+              <CProgress
+                className='progress-xs mt-2'
+                precision={1}
+                color='danger'
+                value={40}
+              />
+
+              </CCol>
+              </CRow>
+              </CCardFooter> */}
+     
+      </CCol>
+      </CRow>
+=======
       <WidgetsDropdown />
      <WidgetsBrand withCharts/>
+>>>>>>> c76f4fa845f840d1dba0a80ddf20abc1e6bf5f9e
   
 
 <CCardGroup columns className = "cols-2"  >
