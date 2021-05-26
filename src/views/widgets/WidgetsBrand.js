@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { CWidgetBrand, CRow, CCol } from '@coreui/react';
-import CIcon from '@coreui/icons-react';
-import ChartLineSimple from '../charts/ChartLineSimple';
+// import CIcon from '@coreui/icons-react';
+// import ChartLineSimple from '../charts/ChartLineSimple';
 // import { Img01, Img02, Img03 } from '../../assets/img';
 const WidgetsBrand = ({withCharts})=>{
 

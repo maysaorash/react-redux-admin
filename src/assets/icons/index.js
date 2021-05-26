@@ -41,7 +41,6 @@ import {
   cilAlignLeft,
   cilAlignRight,
   cilApplicationsSettings,
-
   cilArrowRight,
   cilArrowTop,
   cilArrowCircleBottom,
@@ -119,7 +118,6 @@ import {
   cilSpeedometer,
   cilSpreadsheet,
   cilStar,
-
   cilSun,
   cilTags,
   cilTask,
@@ -144,7 +142,6 @@ export const icons = Object.assign({}, {
   cilAlignLeft,
   cilAlignRight,
   cilApplicationsSettings,
-
   cilArrowRight,
   cilArrowTop,
   cilArrowCircleBottom,
@@ -222,7 +219,6 @@ export const icons = Object.assign({}, {
   cilSpeedometer,
   cilSpreadsheet,
   cilStar,
-
   cilSun,
   cilTags,
   cilTask,

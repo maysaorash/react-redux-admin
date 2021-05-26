@@ -6,7 +6,7 @@ import {
   // CChartDoughnut,
   CCard,
   CCardBody,
-  CCardFooter,
+  // CCardFooter,
   CCardHeader,
   CDropdown,
   CDropdownToggle,
@@ -31,7 +31,9 @@ import {
 //   CChartBar,
 // } from '@coreui/react-chartjs';
 
+
 // import { DocsLink } from 'src/reusable';
+
 import CIcon from '@coreui/icons-react'
 
 // import MainChartExample from '../charts/MainChartExample.js'
@@ -42,6 +44,7 @@ const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
 const Dashboard = () => {
   return (
     <>
+<<<<<<< HEAD
     <CRow>
       <CCol lg='8'>
           <WidgetsDropdown />
@@ -135,9 +138,13 @@ const Dashboard = () => {
      
       </CCol>
       </CRow>
+=======
+      <WidgetsDropdown />
+     <WidgetsBrand withCharts/>
+>>>>>>> c76f4fa845f840d1dba0a80ddf20abc1e6bf5f9e
   
 
-<CCardGroup columns className = "cols-1"  >
+<CCardGroup columns className = "cols-2"  >
       <CCard>
         <CCardHeader>
           Categories
@@ -147,9 +154,15 @@ const Dashboard = () => {
           <CChartBar
             datasets={[
               {
-                // label: 'GitHub Commits',
-                backgroundColor: '#f87979',
-                data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11]
+                label: 'This Month',
+                backgroundColor: 'red',
+                data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+                
+              },
+              {
+                label: 'Last Month',
+                backgroundColor: 'blue',
+                data: [50, 30, 18, 49, 20, 70, 89, 60, 20, 10, 22, 51],
               }
             ]}
             labels="a,b,c,d"
@@ -161,10 +174,9 @@ const Dashboard = () => {
           />
         </CCardBody>
       </CCard>
-      
-        <CCardFooter style={{backgroundColor: '#141414' }}>
+        {/* <CCardFooter>
           <CRow className="text-center">
-            <CCol md sm="3" className="mb-sm-2 mb-0">
+            <CCol md sm="12" className="mb-sm-2 mb-0">
               <div className="text-muted">This Month</div>
               <CProgress
                 className="progress-xs mt-2"
@@ -180,7 +192,7 @@ const Dashboard = () => {
                 precision={1}
                 color="info"
                 value={40}
-              />
+              /> */}
             {/* </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
               <div className="text-muted">Pageviews</div>
@@ -210,9 +222,9 @@ const Dashboard = () => {
                 precision={1}
                 value={40}
               /> */}
-            </CCol>
+            {/* </CCol>
           </CRow>
-        </CCardFooter>
+        </CCardFooter> */}
       </CCardGroup>
   
 
