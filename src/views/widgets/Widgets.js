@@ -11,6 +11,7 @@ import {
   CWidgetSimple,
   CProgress,
 } from '@coreui/react'
+
 import WidgetsBrand from './WidgetsBrand'
 import WidgetsDropdown from './WidgetsDropdown'
 

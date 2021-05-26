@@ -21,7 +21,9 @@ import {
   CChartBar,
 } from '@coreui/react-chartjs';
 
+
 // import { DocsLink } from 'src/reusable';
+
 import CIcon from '@coreui/icons-react'
 
 // import MainChartExample from '../charts/MainChartExample.js'
@@ -33,12 +35,8 @@ const Dashboard = () => {
   return (
     <>
       <WidgetsDropdown />
-      <WidgetsBrand withCharts/>
-      {/* <CCard>
-        <CCardBody>
-          
-          <MainChartExample style={{height: '300px', marginTop: '40px'}}/>
-        </CCardBody> */}
+     <WidgetsBrand withCharts/>
+  
 
 <CCardGroup columns className = "cols-2"  >
       <CCard>

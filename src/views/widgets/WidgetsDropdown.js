@@ -2,15 +2,24 @@ import React from 'react'
 import {
   CWidgetDropdown,
   CRow,
+  CCard,
+  CCardBody,
   CCol,
   CDropdown,
+  CCardHeader,
   CDropdownMenu,
   CDropdownItem,
   CDropdownToggle
 } from '@coreui/react'
+
+
 import CIcon from '@coreui/icons-react'
 // import ChartLineSimple from '../charts/ChartLineSimple'
 // import ChartBarSimple from '../charts/ChartBarSimple'
+
+import {
+  CChartDoughnut,
+} from '@coreui/react-chartjs'
 
 const WidgetsDropdown = () => {
   // render
@@ -159,6 +168,32 @@ const WidgetsDropdown = () => {
           <CIcon name="cil-user"/>
         </CWidgetDropdown>
       </CCol>
+      <CCard>
+        <CCardHeader>
+          User's Of Product
+        </CCardHeader>
+        <CCardBody>
+          <CChartDoughnut
+            datasets={[
+              {
+                backgroundColor: [
+                  '#41B883',
+                  '#E46651',
+                  '#00D8FF',
+                  '#DD1B16'
+                ],
+                data: [40, 20, 80, 10]
+              }
+            ]}
+            labels={[`'New Customer', 'Exsisting Subsriber's', 'Daily Visitor's', 'Extented Subsriber's'`]}
+            options={{
+              tooltips: {
+                enabled: true
+              }
+            }}
+          />
+        </CCardBody>
+      </CCard>
     </CRow>
   )
 }
