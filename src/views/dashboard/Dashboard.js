@@ -20,7 +20,7 @@ import {
 import {
   CChartBar,
 } from '@coreui/react-chartjs';
-import { DocsLink } from 'src/reusable';
+
 import CIcon from '@coreui/icons-react'
 
 // import MainChartExample from '../charts/MainChartExample.js'
@@ -39,12 +39,13 @@ const Dashboard = () => {
       <CCard>
         <CCardHeader>
           Categories
-          <DocsLink href="http://www.chartjs.org"/>
+          {/* <DocsLink href="http://www.chartjs.org"/> */}
         </CCardHeader>
         <CCardBody>
           <CChartBar
             datasets={[
               {
+                // label: 'GitHub Commits',
                 backgroundColor: '#f87979',
                 data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11]
               }
