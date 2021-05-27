@@ -10,10 +10,10 @@ const WidgetsBrand = ({withCharts})=>{
 
   return withCharts ?
   <CRow>
-    <CCol sm="6" lg="2">
-      <CWidgetBrand className="card" style={{width: '14rem'}}>
-     <div className="row">
-  <div className="col-md-4">
+    <CCol sm="6" lg="3">
+      <CWidgetBrand  style={{width: '14rem'}}>
+     <div > 
+    <div className="col-lg-4"> 
     <a href="/images/img01.jpg">
     <div className="thumbnail">
       <img src="/images/img01.jpg" alt="lastBreath"style={{width: '412%'}}/>
@@ -23,31 +23,14 @@ const WidgetsBrand = ({withCharts})=>{
       </div>
         </div>
         </a>
-      </div> 
+      </div>  
      </div>
       </CWidgetBrand>
     </CCol>
-    <CCol sm="6" lg="2">
+    <CCol sm="6" lg="3">
     <CWidgetBrand className="card" style={{width: '14rem'}}>
-     <div className="row">
-  <div className="col-md-4">
-    <a href="/images/img01.jpg">
-    <div className="thumbnail">
-      <img src="/images/img01.jpg" alt="lastBreath"style={{width: '412%'}}/>
-      <div>
-      <h6><strong>The Last Breath</strong></h6>
-      <p><strong>T.v show</strong></p>
-      </div>
-        </div>
-        </a>
-      </div> 
-     </div>
-      </CWidgetBrand>
-      </CCol>
-      <CCol sm="6" lg="2">
-      <CWidgetBrand className="card" style={{width: '14rem'}}>
-     <div className="row">
-  <div className="col-md-4">
+     <div>
+  <div className="col-lg-4">
     <a href="/images/img01.jpg">
     <div className="thumbnail">
       <img src="/images/img01.jpg" alt="lastBreath"style={{width: '412%'}}/>
@@ -63,8 +46,25 @@ const WidgetsBrand = ({withCharts})=>{
       </CCol>
       <CCol sm="6" lg="3">
       <CWidgetBrand className="card" style={{width: '14rem'}}>
-     <div className="row">
-  <div className="col-md-4">
+     <div >
+  <div  className="col-lg-4">
+    <a href="/images/img01.jpg">
+    <div className="thumbnail">
+      <img src="/images/img01.jpg" alt="lastBreath"style={{width: '412%'}}/>
+      <div>
+      <h6><strong>The Last Breath</strong></h6>
+      <p><strong>T.v show</strong></p>
+      </div>
+        </div>
+        </a>
+      </div> 
+     </div>
+      </CWidgetBrand>
+      </CCol>
+      <CCol sm="6" lg="3">
+      <CWidgetBrand className="card" style={{width: '14rem'}}>
+     <div >
+  <div className="col-lg-4">
     <a href="/images/img01.jpg">
     <div className="thumbnail">
       <img src="/images/img01.jpg" alt="lastBreath"style={{width: '412%'}}/>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import {
   CWidgetDropdown,
   CRow,
@@ -9,7 +9,8 @@ import {
   CCardHeader,
   CDropdownMenu,
   CDropdownItem,
-  CDropdownToggle
+  CDropdownToggle,
+  CCardGroup
 } from '@coreui/react'
 
 
@@ -21,11 +22,17 @@ import {
   CChartDoughnut,
 } from '@coreui/react-chartjs'
 
+const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
+
 const WidgetsDropdown = () => {
   // render
   return (
+    
     <CRow>
-      <CCol sm="6" lg="2">
+    <CCol sm="6" lg="8">
+    <CRow>
+      <CCol sm="6" lg="3">
+        
         <CWidgetDropdown
           color="#141414"
           text="View"
@@ -62,7 +69,7 @@ const WidgetsDropdown = () => {
         
       </CCol>
 
-      <CCol sm="6" lg="2">
+      <CCol sm="6" lg="3">
         <CWidgetDropdown
           color="#141414"
           header="+55K"
@@ -100,7 +107,7 @@ const WidgetsDropdown = () => {
         </CWidgetDropdown>
       </CCol>
 
-      <CCol sm="6" lg="2">
+      <CCol sm="6" lg="3">
         <CWidgetDropdown
           color="#141414"
           header="+1M"
@@ -136,7 +143,7 @@ const WidgetsDropdown = () => {
         </CWidgetDropdown>
       </CCol>
 
-      <CCol sm="6" lg="2">
+      <CCol sm="6" lg="3">
         <CWidgetDropdown
           color="#141414"
           header="+2M"
@@ -168,33 +175,38 @@ const WidgetsDropdown = () => {
           <CIcon name="cil-user"/>
         </CWidgetDropdown>
       </CCol>
+      </CRow>
+     <CRow>
+      <WidgetsBrand withCharts/>
+    </CRow>
+     </CCol>
+     
+    <CCol sm="6" lg="4">
       <CCard>
-        <CCardHeader>
+        <CCardHeader >
           User's Of Product
         </CCardHeader>
-        <CCardBody>
-          <CChartDoughnut
+        <CChartDoughnut
             datasets={[
               {
+                data: [44, 55, 30, 30],
                 backgroundColor: [
-                  '#41B883',
-                  '#E46651',
-                  '#00D8FF',
-                  '#DD1B16'
-                ],
-                data: [40, 20, 80, 10]
+                  '#FF0000',
+                  '#F68A04',
+                  '#007AFF',
+                  "#545E75"
+                ]
+                
               }
             ]}
-            labels={[`'New Customer', 'Exsisting Subsriber's', 'Daily Visitor's', 'Extented Subsriber's'`]}
-            options={{
-              tooltips: {
-                enabled: true
-              }
-            }}
+            labels={['New Customer', 'Exsisting Subsriber', 'Daily Visitor', 'Extented Subsriber']}
+           
           />
-        </CCardBody>
-      </CCard>
+       </CCard>
+      </CCol>
+      
     </CRow>
+    
   )
 }
 
