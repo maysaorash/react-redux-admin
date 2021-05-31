@@ -168,7 +168,7 @@ const WidgetsDropdown = () => {
           <CIcon name="cil-user"/>
         </CWidgetDropdown>
       </CCol>
-      <CCard>
+      {/* <CCard>
         <CCardHeader>
           User's Of Product
         </CCardHeader>
@@ -193,7 +193,7 @@ const WidgetsDropdown = () => {
             }}
           />
         </CCardBody>
-      </CCard>
+      </CCard> */}
     </CRow>
   )
 }
